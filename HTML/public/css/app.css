@@ -1,22 +1,24 @@
+
 /** Proxima Nova **/
 
 @font-face {
     font-family: 'Proxima Nova';
     src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
     src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),
+    
     url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
     url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
     url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
-body {
+body{
     font-family: 'Proxima Nova';
 }
 
-input, button, a, table, tr, td, th, span, div, p, h1, h2, h3, h4, h5, h6, label, ul, li {
+input,button,a,table,tr,td,th,span,div,p,h1,h2,h3,h4,h5,h6,label,ul,li{
     font-family: 'Proxima Nova';
 }
 
@@ -86,11 +88,11 @@ button.btn-dimo:active {
     /*background: #004D6C;*/
     background: rgba(255, 255, 255, 0.15);
     height: 100px;
-    border-bottom: thin solid #d8d8d8;
+    /*border-bottom: thin solid #d8d8d8;*/
 }
 
 #dimo_theme header .dimo_logo_wrapper {
-    /* border-right: thin solid #d8d8d8;*/
+    /*border-right: thin solid #d8d8d8;*/
 }
 
 #dimo_theme header img.tech_logo {
@@ -120,7 +122,7 @@ button.btn-dimo:active {
 }
 
 #dimo_theme.dimo-bg {
-    background: url("/public/images/dimo-bg.jpg") center center no-repeat;
+    background: url("/assets/images/dimo-bg.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -152,7 +154,7 @@ button.btn-dimo:active {
 .dimo-landing header h2 {
     font-weight: bold;
     color: #000;
-    text-align: center;
+    text-align:center;
     font-size: 24px;
     padding-top: 35px;
     letter-spacing: 0px !important;
@@ -217,7 +219,7 @@ button.btn-dimo:active {
     color: #fff;
     font-size: 24px;
     padding-top: 35px;
-    text-align: center;
+    text-align:center;
 }
 
 #bosh_theme {
@@ -239,7 +241,7 @@ button.btn-dimo:active {
 }
 
 #bosh_theme.bosh-bg {
-    background: url("/public/images/bosh-bg.jpg") center center no-repeat;
+    background: url("/assets/images/bosch-bg.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -447,8 +449,8 @@ button.btn-dimo:active {
 }
 
 .form-element label {
-    font-weight: bold;
-    color: #767676;
+    /*font-weight: bold;*/
+    color: #e3e3e3;
     display: block;
     font-size: 12px;
     margin: 0px 0px 5px 0px;
@@ -483,7 +485,7 @@ button.btn-dimo:active {
     background: #f8f8f8;
     border: thin solid rgba(0, 80, 100, 0.3);
     height: 36px;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
     border-radius: 4px;
     box-shadow: 0px 2px 4px rgba(215, 215, 215, 0.5);
@@ -520,7 +522,7 @@ button.btn-dimo:active {
 }
 
 .form-element textarea {
-    height: 120px;
+    height: 140px;
 }
 
 div.checkbox {
@@ -548,6 +550,7 @@ div.checkbox:after {
     border-radius: 4px;
     border: thin solid rgba(0, 80, 100, 0.3);
     box-shadow: 0px 2px 4px rgba(215, 215, 215, 0.5);
+    background-color: #fff; 
 }
 
 div.checkbox.active:after {
@@ -574,7 +577,7 @@ div.checkbox label {
 
 .profile-dropdown {
     float: right;
-    margin-top: 36px;
+    margin-top: 28px;
 }
 
 .profile-dropdown button {
@@ -632,6 +635,7 @@ div.checkbox label {
 .dimo-landing a img, .dimo-landing a figure {
     display: block;
     margin: 0 auto;
+    margin-top: 25px;
 }
 
 .dimo-landing a img.b-text {
@@ -677,10 +681,10 @@ div.checkbox label {
 .dimo-landing a figure.b-commercial p {
     margin-top: 15px;
     font-weight: bold;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
-.dimo-landing a figure.b-commercial:hover p {
+.dimo-landing a.b-commercial:hover p {
     opacity: 1;
 }
 
@@ -691,10 +695,10 @@ div.checkbox label {
 .dimo-landing a figure.b-passenger p {
     margin-top: 15px;
     font-weight: bold;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
-.dimo-landing a figure.b-passenger:hover p {
+.dimo-landing a.b-passenger:hover p {
     opacity: 1;
 }
 
@@ -703,11 +707,27 @@ div.checkbox label {
 }
 
 .dimo-landing a figure.chrysler {
-    bottom: -30px;
+    bottom: -90px;
 }
 
 .dimo-landing a figure.jeep {
-    bottom: -36px;
+    bottom: -90px;
+}
+
+.dimo-landing a figure.chrysler p {
+    /*opacity: 0;*/
+}
+
+.dimo-landing a figure.jeep p {
+    /*opacity: 0;*/
+}
+
+.dimo-landing a.chrysler:hover p {
+    opacity: 1;
+}
+
+.dimo-landing a.jeep:hover p {
+    opacity: 1;
 }
 
 .dimo-landing a.b-passenger:hover,
@@ -921,6 +941,12 @@ div.checkbox label {
 
 }
 
+#check_availability div.radio-time input[type="radio"].not-available {
+    cursor: not-allowed;
+}
+#check_availability div.radio-time input[type="radio"]{
+    cursor: pointer;
+}
 #check_availability div.radio-time:hover label,
 #check_availability div.radio-time.selected label {
     background: #417505;
@@ -962,16 +988,15 @@ table.service-booking-info tr td:last-child p {
     top: 20px;
 }
 
+
 .visible-xs,
-.hidden-xs {
+.hidden-xs{
     display: none !important;
 }
-
 .hidden-lg {
     display: none !important;
 }
-
-.visible-lg {
+.visible-lg{
     display: block !important;
 }
 
@@ -999,7 +1024,15 @@ footer a:hover {
 }
 
 .bg-transparent-50 {
-    background: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(0, 0, 0, 0.35) !important;
+}
+
+.bg-transparent-50 .card {
+    background: rgba(0, 0, 0, 0.35) !important;
+}
+
+.bg-transparent-50 tr {
+    background-color: #fff !important;
 }
 
 @media all and (max-width: 980px) {
@@ -1134,7 +1167,7 @@ footer a:hover {
     }
 
     .booking-history-table {
-        margin: -20px;
+        /* margin: -20px; */
     }
 
     .table .thead-dark th {
@@ -1181,7 +1214,7 @@ footer a:hover {
         display: none !important;
     }
 
-    .visible-lg {
+    .visible-lg{
         display: inline-block !important;
     }
 
